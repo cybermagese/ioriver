@@ -1,30 +1,22 @@
 {
     "bridge": {
         "name":"Ioriver",
-        "ip":"10.0.48.94",
+        "host":"10.0.48.94",
         "username":"config",
         "password": "ef56",
         "port":"443",
-        "path":""
+        "path":"",
+        "sn_x100000":4212
     },
     "description":"this is a sample config file",
-    "accessories": [
-
-    ],
     "platforms":[
         {
             "platform":"ioriver-telldus",
             "name":"My Telldus",
+            "sn_x1000":1,
             "ip": "10.0.48.95",
             "access_token":"MY_LOCAL_ACCESS_TOKEN",
             "ignore_id_list": [1,2,3],
-            "virtual_accessories":[
-                {
-                    "name":"my ultra switch",
-                    "type":"device",
-                    "model":"switch"
-                }
-            ]
         }
     ]
 

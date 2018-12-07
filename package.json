@@ -1,6 +1,6 @@
 {
   "name": "ioriver",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Home automation bridge mainly for IMSE Ultra PLC/BAC",
   "main": "lib/server.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/cybermagese/ultrabridge.git"
   },
   "keywords": [
-    "imse-ultra","ioriver"
+    "imse-ultra","ioriver","iot","telldus"
   ],
   "author": "Ove Jansson",
   "license": "ISC",
