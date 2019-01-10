@@ -16,7 +16,7 @@
             "sn_x1000":1,
             "ip": "10.0.48.95",
             "access_token":"MY_LOCAL_ACCESS_TOKEN",
-            "ignore_id_list": [1,2,3],
+            "ignore_id_list": [1,2,3]
         }
     ]
 
