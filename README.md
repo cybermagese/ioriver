@@ -87,4 +87,10 @@ To run ioriver in a specific directory with config.json
 
 Option -D show debug information
 
+
+Running on Rasberry it is recommended to redirect standard output to /dev/null to avoid trashing the SD card
+```
+>ioriver -U /root/.ioriver >/dev/null 2>/dev/null
+```
+
 Use pm2 or similar utilities to make it run at startup
