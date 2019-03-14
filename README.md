@@ -96,9 +96,9 @@ Running on Rasberry it is recommended to redirect standard output to /dev/null t
 
 Use pm2 or similar utilities to make it run at startup
 
-## Release Notes
+## Release History
 
-# 0.4.0
+### 0.4.0 2018-03-14
 - Support for Telldus energy meter
 - Support for automatic unit name changes (update unit on IMSE if the name changes on plugin platform)
 - buggfixes 
