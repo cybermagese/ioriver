@@ -54,6 +54,7 @@ Edit the config file:
 ### Configure options for IMSE Ultra PLC
 
 bridge section of the file
+
 | Label | Description |
 | --- | --- |
 | name | Arbitary name of your installation |
@@ -64,6 +65,7 @@ bridge section of the file
 | path | IMSE Ultra path if behind a proxypass or such. Usually an emptry string |
 | sn_x100000 | This is used as an identifier for this bridge on the IMSE Ultra. An integer 1-9999.|
 | update_names | Setting this to true will update the IOUNIT name to the current name from the plugin and change it if it is changed on the plugin platform(s) |
+
 
 ### Configure plugins
 Plugins are configured in the platforms section of the file. Multiple platforms are allowed even of the same type as long as they have different sn_x1000.
