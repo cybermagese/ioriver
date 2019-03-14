@@ -34,7 +34,8 @@ Edit the config file:
         "password": "ef56",
         "port":"443",
         "path":"",
-        "sn_x100000":4212
+        "sn_x100000":4212,
+        "update_names":false
     },
     "description":"this is a sample config file",
     "platforms":[
@@ -62,6 +63,7 @@ bridge section of the file
 | port | IMSE Ultra port. The default is 443 |
 | path | IMSE Ultra path if behind a proxypass or such. Usually an emptry string |
 | sn_x100000 | This is used as an identifier for this bridge on the IMSE Ultra. An integer 1-9999.|
+| update_names | Setting this to true will update the IOUNIT name to the current name from the plugin and change it if it is changed on the plugin platform(s) |
 
 ### Configure plugins
 Plugins are configured in the platforms section of the file. Multiple platforms are allowed even of the same type as long as they have different sn_x1000.
@@ -87,10 +89,17 @@ To run ioriver in a specific directory with config.json
 
 Option -D show debug information
 
-
 Running on Rasberry it is recommended to redirect standard output to /dev/null to avoid trashing the SD card
 ```
 >ioriver -U /root/.ioriver >/dev/null 2>/dev/null
 ```
 
 Use pm2 or similar utilities to make it run at startup
+
+## Release Notes
+
+# 0.4.0
+- Support for Telldus energy meter
+- Support for automatic unit name changes (update unit on IMSE if the name changes on plugin platform)
+- buggfixes 
+

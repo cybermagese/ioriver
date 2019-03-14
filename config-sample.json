@@ -6,7 +6,8 @@
         "password": "ef56",
         "port":"443",
         "path":"",
-        "sn_x100000":4212
+        "sn_x100000":4212,
+        "update_names":false
     },
     "description":"this is a sample config file",
     "platforms":[
