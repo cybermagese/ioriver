@@ -54,7 +54,6 @@ Edit the config file:
 ### Configure options for IMSE Ultra PLC
 
 bridge section of the file
-
 | Label | Description |
 | --- | --- |
 | name | Arbitary name of your installation |
@@ -105,3 +104,7 @@ Use pm2 or similar utilities to make it run at startup
 - Support for automatic unit name changes (update unit on IMSE if the name changes on plugin platform)
 - buggfixes 
 
+### 0.1.0 2018-02-06
+- Support for Telldus local api
+- Support for OnOff and dimmer devices
+- Support for common sensors (temperature, humidity, and weather)

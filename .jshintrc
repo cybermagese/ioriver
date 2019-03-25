@@ -1,0 +1,6 @@
+{
+    "esversion": 8,
+    "node": true,
+    "sub":true,
+    "laxbreak": true
+}
