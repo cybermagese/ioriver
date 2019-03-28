@@ -1,6 +1,6 @@
 {
   "name": "ioriver",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Home automation bridge mainly for IMSE Ultra PLC/BAC",
   "main": "lib/server.js",
   "scripts": {
