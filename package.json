@@ -1,8 +1,11 @@
 {
   "name": "ioriver",
-  "version": "0.4.4",
+  "version": "0.4.6",
   "description": "Home automation bridge mainly for IMSE Ultra PLC/BAC",
   "main": "lib/server.js",
+  "bin": {
+    "ioriver": "bin/ioriver"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
