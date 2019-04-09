@@ -99,12 +99,45 @@ Option -D show debug information
 Running on Rasberry it is recommended to redirect standard output to /dev/null to avoid trashing the SD card
 
 ```bash
->ioriver -U /root/.ioriver >/dev/null 2>/dev/null
+ioriver -U /root/.ioriver >/dev/null 2>/dev/null
 ```
 
 Use pm2 or similar utilities to make it run at startup
 
+### Running ioriver on boot using pm2 as node process manager
+
+This assumes you ahve installed Ioriver globally via sudo npm install -g ioriver
+
+First install pm2:
+
+```bash
+npm install -g pm2
+```
+
+Then:
+
+```bash
+pm2 startup
+```
+
+Follow the instructions on screen
+
+Then add ioriver to pm2:
+
+```bash
+pm2 start ioriver
+pm2 save
+```
+
+Ioriver will now run when your Pi reboots
+
 ## Release History
+
+### 0.4.9 2019-04-09
+
+- Fix for battery status, 0-100 is percent, -1 is OK, -2 is unknown status (most of telldus sensors), -3 is low level (also set this on new IOCHANNELS)
+- Buggfix for creating multiple IOUNITS
+- instructions for PM2
 
 ### 0.4.7 2019-04-01
 
