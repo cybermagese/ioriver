@@ -133,6 +133,10 @@ Ioriver will now run when your Pi reboots
 
 ## Release History
 
+### 0.5.0
+
+- Philips Hue Bridge support with ioriver-hue
+
 ### 0.4.9 2019-04-09
 
 - Fix for battery status, 0-100 is percent, -1 is OK, -2 is unknown status (most of telldus sensors), -3 is low level (also set this on new IOCHANNELS)
