@@ -60,6 +60,7 @@ Edit the config file:
 ### Configure options for IMSE Ultra PLC
 
 bridge section of the file
+
 | Label | Description |
 | --- | --- |
 | name | Arbitary name of your installation |
